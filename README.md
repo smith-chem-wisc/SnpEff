@@ -1,14 +1,22 @@
-                                       SnpEff
-                                       ------
-                                       
-Documentation
+# SnpEff for Spritz
 
-	http://snpeff.sourceforge.net/
+This fork of SnpEff has been adapted for proteogenomics to be used in [Spritz](https://smith-chem-wisc.github.io/Spritz/).
 
-Enjoy!
+## SnpEff Documentation
 
-	Pablo Cingolani
+> http://snpeff.sourceforge.net/
+> 
+> Enjoy! 
+> 
+> Pablo Cingolani
 
+## Usage example
+
+1. Please download the [latest release](https://github.com/smith-chem-wisc/SnpEff/releases/latest)
+2. Once unzipped, this folder should have the file `snpEff.jar` binary in its base directory.
+3. You can then use [commands such as those used in Spritz](https://github.com/smith-chem-wisc/Spritz/blob/f27b14a84a75ab3d20d12e3645256600f3a9ef9c/Spritz/workflow/rules/variants.smk#L203) to generate a proteogenomic database for variants, e.g., `java -Xmx16000M -jar snpEff.jar -v -nostats -fastaProt output.protfa -xmlProt output.protxml reference.gff3 input.vcf > output.ann 2> log.txt`
+
+## Building information (as of June 2020)
 
 To build SnpEff for Spritz:
 1. Activate spritz conda environment
