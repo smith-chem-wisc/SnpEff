@@ -37,3 +37,14 @@ cd ..
 ```
 
 4. To create new zip-file release, include everything except the `data` folder.
+
+## Licence and attribution
+
+SnpEff is by Pablo Cingolani and is distributed under the MIT licence; see [LICENSE.md](LICENSE.md),
+reproduced verbatim from [pcingola/SnpEff](https://github.com/pcingola/SnpEff).
+
+This is a **modified** fork. It adds a protein XML writer for proteogenomics
+(`src/main/java/org/snpeff/proteome/ProteinXml.java`), wires it into `snpEff eff`, adds
+`Transcript.cdsExtended()` and `Transcript.proteinTrimmed()`, and threads the originating VCF line
+through variant construction so the XML can cite it. Those changes are ours; everything else is
+upstream's.
